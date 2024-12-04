@@ -5,6 +5,7 @@ input = """3 4
 3 9
 3 32"""
 
+
 lines = input.splitlines()
 
 lefts = []
