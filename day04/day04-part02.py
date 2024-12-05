@@ -13,29 +13,6 @@ MXMXAXMASX"""
 matrix = [list(row) for row in input.split()]
 
 
-def countXmas(x, y):
-    directions = [[1,0], [0,1], [-1,0], [0,-1], [1,1], [-1,-1], [1,-1], [-1,1]]
-    
-    if matrix[x][y] != 'A':
-        return 0
-    
-    xmasCount = 0
-    mas = ['M', 'A', 'S']
-    for dx, dy in directions:
-        for i in range(len(mas)):
-            try:
-                if (x+(dx*(i+1)) < 0 or y+(dy*(i+1)) < 0):
-                    break
-                if (matrix[x+(dx*(i+1))][y+(dy*(i+1))] != mas[i]):
-                    break
-            except:
-                break
-            if i == (len(mas) - 1):
-                xmasCount += 1
-    
-    return xmasCount
-
-
 def isXMas(x, y):
     
     if matrix[x][y] != 'A':
