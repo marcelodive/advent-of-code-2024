@@ -53,7 +53,7 @@ def isXMas(x, y):
            return False
        
     xWord = ''.join(xChars)
-    if xWord == 'SSMM' or xWord == 'MMSS' or xWord == 'SMMS' or xWord == 'MSSM':
+    if xWord in ('SSMM', 'MMSS', 'SMMS', 'MSSM'):
        return True
 
  
