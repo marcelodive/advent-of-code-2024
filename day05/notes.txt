@@ -1,0 +1,5 @@
+{
+    number: int,
+    after: int[],
+    before: int[],
+}
